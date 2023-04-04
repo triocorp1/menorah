@@ -1,209 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"> -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Medicative Hospital || Health & Medical HTML Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- font awesom -->
-    <!-- https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"> -->
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Responsive stylesheet  -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
     <!-- Favicon -->
-    <link href="img/favicon.png" rel="shortcut icon" type="image/png" />
+    <link href="img/favicon.png" rel="shortcut icon" type="image/png">
 
-  </head>
+ 
+    <style>
+        #more {display: none;}
+        #more1 {display: none;}
+        #more3 {display: none;}
+        #more4 {display: none;}
+        #more5 {display: none;}
+        #more6 {display: none;}
+        #more7 {display: none;}
+        #more8 {display: none;}
+        </style>
 
-  <body>
+</head>
+ 
+<body>
+
     <div class="preloader"></div>
 
-   
+    
     <!-- Header navbar start -->
     <div class="header-topbar style-2">
-      <div class="container padding-none">
-          <div class="row">
-              <div class="col-md-8 col-sm-6 welcome-top">
-                  <ul class="list-inline top-icon">
-                      <li><i class="fa fa-envelope"></i> contact@menorahhospital.com</li>
-                      <li><i class="fa fa-clock-o"></i> Mon - Sat 8.00 - 18.00</li>
-                  </ul>
-              </div>
-              <div class="col-md-4 col-sm-6">
-                  <ul class="list-inline text-right icon-style-1">
-                      <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                      <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                      <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  <div class="main-navbar conner-style style-2 position-fixed">
-      <div class="container padding-none">
-          <div class="row">
-              <div class="col-md-12">
-                  <nav class="navbar navbar-default">
-                      <div class="navbar-header">
-                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                              <span class="sr-only">Toggle navigation</span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                              <span class="icon-bar"></span>
-                          </button>
-                   
-                              <a class="navbar-brand dis-none" href="index.html"><img src="img/finalLogo.png" alt="">
-                              </a>
-                          <a class="navbar-brand dis-block" href="index.html"><img src="img/finalLogo.png" alt="">
-                              </a>
-                      </div>
-                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations-delay="1.8s" data-animations="fadeInUp">
-                          <ul class="nav navbar-nav bg-none navbar-right style-3">
-                              <li class="dropdown active">
-                                  <!-- <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home <i class="fa fa-angle-down" aria-hidden="true"></i></span> </a> -->
-                                  <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home</span> </a>
-                      
-                              </li>
-                              <li class="dropdown">
-                                  <a href="about_us.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Pages">About us</span></a>
-                                 
-                              </li>
-                              <li class="dropdown">
-                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Depertment <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                                  <ul class="dropdown-menu">
-                                      <li><a href="phamarcy.html">PHAMARCY</a>
-                                      </li>
-                                      <li><a href="laboratory.html">LABORATORY</a>
-                                      </li>
-                                      <li><a href="optical.html">OPTICAL</a>
-                                      </li>                                       
-                                      <li><a href="dialysis.html">DIALYSIS</a>
-                                      </li>
-                                      <li><a href="dental.html">DENTAL</a>
-                                      </li> 
-                                      <li><a href="dental.html">HOME HEALTH</a>
-                                      </li> 
-                                      <li><a href="phamarcy.html">WOMEN HEALTH</a>
-                                      </li>
-                                      <li><a href="laboratory.html">OUT-PATIENT</a>
-                                      </li>
-                                      <li><a href="optical.html">IN-PATIENT</a>
-                                      </li>                                       
-                                      <li><a href="dialysis.html">RADIOLOGY</a>
-                                      </li>
-                                      <li><a href="dental.html">PHYSIOTHERAPY</a>
-                                      </li>
-                                  </ul>
-                              </li>
-                              <li class="dropdown">
-                                  <a href="doctors.html"> <span data-hover="Doctors">Doctors </span></a>
-                           
-                              </li>
-                              <li class="dropdown">
-                                  <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Portfolio">Portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                                  <ul class="dropdown-menu">
-                                      <li><a href="portfolio-col-3.html">Portfolio 3 columns</a>
-                                      </li>
-                                      <li><a href="portfolio-col-4.html">Portfolio 4 columns</a>
-                                      </li>
-                                      <li><a href="portfolio-width.html">Portfolio Width</a>
-                                      </li>
-                                      <li><a href="portfolio-gutter.html">Portfolio Gutter Less</a>
-                                      </li>
-                                  </ul> -->
-                                  <a href="./porfolio.html" role="button" ><span data-hover="Portfolio">Portfolio </span></a>
-                              </li>
-                              
-                              <li class="dropdown">
-                                <a href="blog.html" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Blog">Blog </span></a>
-                                  <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Blog">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
-                                  <ul class="dropdown-menu">
-                                      <li><a href="blog-grid.html">Blog grid</a>
-                                      </li>
-                                      <li><a href="blog-single.html">Blog Single</a>
-                                      </li>
-                                      <li><a href="blog-no-sideber.html">Blog No Sideber</a>
-                                      </li>
-                                      <li><a href="blog-left.html">Blog Left Sidebar</a>
-                                      </li>
-                                      <li><a href="blog-right.html">Blog Right Sidebar</a>
-                                      </li>
-                                  </ul> -->
-                              </li>
-                              <li class="dropdown">
-                                  <a href="contact.html"><span data-hover="Contact">Contact</span></a>
-                     
-                              </li>
-                             
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </li>
-                          </ul>
-                      </div>
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </div>
-  <!-- Header navbar end -->
-
-    <!-- Dental content Body -->
-    <section>
-      <div class="bg-faded">
-        <div class="container">
-           <div class="row">
-            <div class="col-sm-6">
-                    <h1 class="text-info">Why Should You Visit The Best Dental Clinic?</h1>
-                    <br>
-                    <p style="font-size: 20px;">Right clinic, right treatment, right cost, and right dentist is all a patient wants. It is mandatory to visit a dental clinic in Nairobi at least twice a year to maintain the oral hygiene. Selecting the right dentist should be on the top priority of every patient.</p>
-                   <br>
-                    <ol>
-                        <li>
-                             The dentist will educate you on the dental diseases and the treatment that needs to opt with the treatment plan along with the cost options, benefits and risk. 
-                        </li>
-                        <li>
-                              Provides a valid diagnosis and a scientifically valid treatment plan.
-                        </li>
-                    </ol>
+        <div class="container padding-none">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 welcome-top">
+                    <ul class="list-inline top-icon">
+                        <li><i class="fa fa-envelope"></i> contact@menorahhospital.com</li>
+                        <li><i class="fa fa-clock-o"></i> Mon - Sat 8.00 - 18.00</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <ul class="list-inline text-right icon-style-1">
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        <li class=" hvr-rectangle-out"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <img src="./img/dental/2.jpg" class="img-fluid" alt="Responsive image">
-            </div>
-           </div>
         </div>
-      </div>
-    </section> <!-- Footer Style start -->
+    </div>
+
+    <div class="main-navbar conner-style style-2 position-fixed">
+        <div class="container padding-none">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                           
+                                <a class="navbar-brand dis-none" href="index.html"><img src="img/finalLogo.png" alt="">
+                                </a>
+                            <a class="navbar-brand dis-block" href="index.html"><img src="img/finalLogo.png" alt="">
+                                </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-hover="dropdown" data-animations-delay="1.8s" data-animations="fadeInUp">
+                            <ul class="nav navbar-nav bg-none navbar-right style-3">
+                                <li class="dropdown active">
+                                    <!-- <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home <i class="fa fa-angle-down" aria-hidden="true"></i></span> </a> -->
+                                    <a href="index.html" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home</span> </a>
+                                 
+                                </li>
+                                <li class="dropdown">
+                                    <a href="about_us.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Pages">About us</span></a>
+                                   
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Depertment <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="phamarcy.html">PHAMARCY</a>
+                                        </li>
+                                        <li><a href="laboratory.html">LABORATORY</a>
+                                        </li>
+                                        <li><a href="optical.html">OPTICAL</a>
+                                        </li>                                       
+                                        <li><a href="dialysis.html">DIALYSIS</a>
+                                        </li>
+                                        <li><a href="dental.html">DENTAL</a>
+                                        </li> 
+                                        <li><a href="home_health.html">HOME HEALTH</a>
+                                        </li> 
+                                        <li><a href="women_health.html">WOMEN HEALTH</a>
+                                        </li>
+                                        <li><a href="out_patient.html">OUT-PATIENT</a>
+                                        </li>
+                                        <li><a href="in_patient.html">IN-PATIENT</a>
+                                        </li>                                       
+                                        <li><a href="radiology.html">RADIOLOGY</a>
+                                        </li>
+                                        <li><a href="physiotherapy.html">PHYSIOTHERAPY</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="doctors.html"> <span data-hover="Doctors">Doctors </span></a>
+                      
+                                </li>
+                                <li class="dropdown">
+                                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Portfolio">Portfolio <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="portfolio-col-3.html">Portfolio 3 columns</a>
+                                        </li>
+                                        <li><a href="portfolio-col-4.html">Portfolio 4 columns</a>
+                                        </li>
+                                        <li><a href="portfolio-width.html">Portfolio Width</a>
+                                        </li>
+                                        <li><a href="portfolio-gutter.html">Portfolio Gutter Less</a>
+                                        </li>
+                                    </ul> -->
+                                    <a href="./porfolio.html" role="button" ><span data-hover="Portfolio">Portfolio </span></a>
+                                </li>
+                                
+                                <li class="dropdown">
+                                  <a href="blog.html" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Blog">Blog </span></a>
+                                    <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Blog">Blog <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog-grid.html">Blog grid</a>
+                                        </li>
+                                        <li><a href="blog-single.html">Blog Single</a>
+                                        </li>
+                                        <li><a href="blog-no-sideber.html">Blog No Sideber</a>
+                                        </li>
+                                        <li><a href="blog-left.html">Blog Left Sidebar</a>
+                                        </li>
+                                        <li><a href="blog-right.html">Blog Right Sidebar</a>
+                                        </li>
+                                    </ul> -->
+                                </li>
+                                <li class="dropdown">
+                                    <a href="contact.html"><span data-hover="Contact">Contact</span></a>
+                          
+                                </li>
+                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header navbar end -->
+
+    <style>
+
+        .card {
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          background-color: aliceblue;
+        
+        }
+        .card1 {
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          overflow: hidden;
+          margin-left: 30px;
+          margin-right: 30px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          background-color: #214893;
+        
+        }
+        .card img {
+          width: 64px;
+          height: 64px;
+        }
+        
+        .card-content {
+          padding: 20px;
+        }
+        
+        .card-content h2 {
+          margin: 0 0 10px;
+        }
+        
+        .card-content p {
+          margin: 0;
+        
+        }
+        .h44{
+            color: gold;
+        }
+        
+        
+        
+            </style>
+        
+        <section  >
+            <div>
+            <img src="img/cust/dental7_1999x684.png" alt="">
+            <div class="container" style="margin-top: -150px;">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card1">
+                        <div class="text-center margin-top-30">
+                        <img  src="https://cdn-icons-png.flaticon.com/128/9193/9193295.png"  alt="" style="margin-bottom: 50px;"  >
+                    </div>
+                    </div>
+                        <!-- <i class="fa fa-microscope"></i> -->
+                </div>
+                <div class="col-md-8">
+                <div class="card-content">
+                    <h2 class="h44">Dental</h2>
+                    <div class="border-style-2 margin-bottom-30"></div>
+                    <p class="lead">The dental department at our hospital is equipped with state-of-the-art technology and staffed by experienced dentists and support staff who provide comprehensive care, including preventive services, restorative treatments, and specialized procedures, to help patients maintain optimal oral health and wellbeing.</p>
+                 
+                </div>
+                </div>
+                </div>
+              </div>
+              </div>
+            </div>
+              </section>
+    <!-- lab 1st section start -->
+    <!-- <section class="divider over-layer-white" style="background-image:url(img/bg/6.jpg);">
+       
+        <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 style="color: rgba(0,176,146, 0.7);">DIALYSIS</h1> 
+            </div> 
+          </div> 
+</section> -->
+
+    <section class=" animatedParent animateOnce">
+        <div class="container padding-bottom-none">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="animated fadeInLeftShort slow delay-500 lab1-img " src="https://media.istockphoto.com/id/1389303586/photo/tooth-and-mouthwash-dancing-on-white-background-with-copy-space.jpg?s=612x612&w=0&k=20&c=PbcgaYJaae1xaiO8LcwVdB8dXaZQlksBz8yBwmYaKDk="  alt="">
+                      
+                    </div>
+                    <div class="col-md-6  margin-top-100 animated fadeInRightShort slow delay-500">
+
+                        <h3>Services <span style="color: gold;">features</span> </h3>
+                        <div class="border-style-2 margin-bottom-30"></div>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>State-of-the-art technology<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>Experienced dentists and support staff<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i> Comprehensive care<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>  Personalized care<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>Patient education and support<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>  Patient education and support<br>
+                        <i class="fa fa-check fa-2x" style="color: #00B092;"> </i> Emergency dental care<br><br>
+                        <!-- <i class="fa fa-check fa-2x" style="color: #00B092;"> </i>  Convenient and comfortable setting<br> -->
+                       
+                       <!-- <p>Dialysis is a medical procedure that is used to remove waste and excess fluids from the blood when the kidneys are no longer able to do so on their own. The procedure involves the use of a special machine that filters the blood, much like the kidneys, and returns it back to the body.</p>
+                       <br>
+                       <p>During dialysis, a patient's blood is first pumped out of the body and into a machine called a dialyzer, which is essentially an artificial kidney. The dialyzer filters the blood, removing excess fluids, waste products, and toxins. The clean blood is then returned to the body through a separate line.</p>
+                       <br>
+                       <p>Dialysis may be performed in a hospital or in an outpatient setting, such as a dialysis center. The procedure typically takes several hours and is often performed multiple times a week, depending on the patient's needs.</p>
+                       <br> -->
+                       <!-- <p>Dialysis can be performed using different methods, including hemodialysis and peritoneal dialysis. Hemodialysis involves using an external machine to filter the blood, while peritoneal dialysis uses the lining of the abdomen to filter the blood.</p> -->
+            
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- lab 1st section end -->
+
+   <!-- divider start -->
+   <section class="divider divider-video over-layer-white" style="background-image:url(img/bg/6.jpg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <a href="https://player.vimeo.com/video/51589652?h=836062ff9b&dnt=1&app_id=122963" data-fancybox-group="gallery" class="lightbox-image" title="lightbox view"><i class="icon icon-Play"></i></a>    
+            </div> 
+        </div> 
+    </div> 
+</section>
+<!-- divider end -->
+    
+    <!--lab 2nd section start -->
+    <section class=" animatedParent animateOnce">
+        <div class="container padding-bottom-none">
+            <div class="section-content">
+                <div class="row">
+                    <div class="col-md-6 margin-top-20 animated fadeInRightShort slow delay-500">
+                      <h1>
+                        Experience Advanced<span style="color: gold;"> Dentistry</span>  At Menorah</h1> 
+                        <p>Menorah dental delivers quality dentistry with a personalized touch. Each patient is treated with the utmost care, compassion, empathy and state-of-the-art dentistry that promises nothing but the best.</p>
+                        <br>
+                        <p>We provide oral care solutions for all dental problems, including Root Canal Treatment, teeth whitening, teeth cleansing and polishing, complete or partial dentures, orthodontic treatment and more. With our team of expert dentists, we take care of all your dental needs and ensure complete sterilization in all our procedures.</p>
+                
+
+                        </div>
+                        
+                    <!-- </div> -->
+                    <div class="col-md-6">
+                        <!-- <img src="./img/lab/2.jpg" class="responsive" /> -->
+                        <!-- <img class="animated fadeInLeftShort slow delay-500 lab1-img " src="https://media.istockphoto.com/id/1409828583/vector/kidney-ultrasound-procedure-in-medical-lab-vector.jpg?s=612x612&w=0&k=20&c=sXP3e9EpJQxnPIxwJmYAU4cSrMRK-EizSkM8MuQa4fQ=" alt=""> -->
+                        <img class="animated fadeInLeftShort slow delay-500 lab1-img " src="https://media.istockphoto.com/id/1389303587/photo/mouthwash-water-dancing-around-white-tooth-with-large-blank-space-for-add-text.jpg?s=612x612&w=0&k=20&c=Ik3r4De4XyIchYtNT2QdDG3dkbTL958YqyOq-_8wrg8=" alt="" style="border-radius: 20px;">
+                      
+                    </div>
+                   
+                </div>
+
+
+    <!-- Footer Style start -->
     <footer class="bg-faded">
         <div class="container">
             <div class="section-content">
@@ -296,9 +436,8 @@
     </section>
     <!-- Footer Style End -->
 
-    <a href="#" class="scrollup"
-      ><i class="pe-7s-up-arrow" aria-hidden="true"></i
-    ></a>
+  
+    <a href="#" class="scrollup"><i class="pe-7s-up-arrow" aria-hidden="true"></i></a>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
 
@@ -306,15 +445,9 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
     <!-- all plugins and JavaScript -->
-    <script
-      type="text/javascript"
-      src="js/bootstrap-datepicker.min.js"
-    ></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="js/css3-animate-it.js"></script>
-    <script
-      type="text/javascript"
-      src="js/bootstrap-dropdownhover.min.js"
-    ></script>
+    <script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/gallery.js"></script>
     <script type="text/javascript" src="js/player.min.js"></script>
@@ -323,5 +456,10 @@
 
     <!-- Main Custom JS -->
     <script type="text/javascript" src="js/script.js"></script>
-  </body>
+
+
+</body>
+
 </html>
+
+ 
