@@ -166,153 +166,112 @@
     </div>
     <!-- Header navbar end -->
 
-
-    <section class="inner-bg over-layer-black" style="background-image: url('img/bg/6.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="mini-title inner-style-2">
-                        <h3>Contact Us</h3>
-                        <p><a href="index-one.html">Home</a> <span class="fa fa-angle-right"></span> <a href="#">Contact</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- service start -->
-    <section class="service-area contact-info">
+    
+    <!-- appointment start -->
+    <section class=" animatedParent animateOnce">
         <div class="container padding-bottom-none">
-            <div class="section-content">
+            <div class="section-content" id="appointment">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 bg-f8">
-                            <div class="service-icon">
-                                <i class="pe-7s-map"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#" class="color-333">Contact Info</a></h5>
-                                <p>Menorah Medical Center, Westlands Nairobi.
-                                     <br>Menorah Medical Institute - Wote, Makueni County.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 bg-f8">
-                            <div class="">
-                                <i class="pe-7s-clock"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#" class="color-333">Service Hours</a></h5>
-                                <p>Monday-Saturday: 8.00 - 18.00<br>&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 bg-f8">
-                            <div class="">
-                                <i class="pe-7s-mail-open"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#" class="color-333">Email</a></h5>
-                                <p> contact@menorahhospital.com<br>&nbsp;</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- service end -->
-    <hr>
-
-    <section>
-        <div class="container padding-bottom-80">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="section-title margin-left-20 ">
-                            <h6>Contact</h6>
-                            <h2>Get in Touch</h2>
-                            <div class="small-line-border-2"></div>
-                        </div>
-                        <form id="ajax-contact" method="post" action="php/contact.php">
-                            <div class="col-md-6">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Your Email"  required>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="text" name="subject" class="form-control" placeholder="Subject" id="subject" required>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="contact-textarea">
-                                    <textarea class="form-control" rows="6" placeholder="Wright Message" id="message" name="message" required></textarea>
-                                    <button class="btn btn-theme" type="submit" value="Submit Form">Send Message</button>
+                   
+                    <div class="col-md-6 bg-f8 padding-tb margin-bottom-10 animated fadeInRightShort slow delay-500">
+                        <div class="booking-from">
+                            <h2>Make An <span class="color-defult">Appointment</span></h2>
+                            <div class="border-style-2 margin-bottom-30"></div>
+                            <p class="margin-bottom-30">Easily schedule your visit with our online appointment booking system. Get convenient access to our healthcare services with just a few clicks.</p>
+                            <form method="post" action="#">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="fname" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="name" id="lname" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="subject" class="form-control" placeholder="Input Subject" id="subject" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="Reservation" class="form-control" placeholder="Input Date" id="Reservation" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email Here" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" name="phone" class="form-control" placeholder="Your Phone" id="phone" required>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="contact-textarea">
+                                            <textarea class="form-control" rows="6" placeholder="Wright Message" id="message" name="message" required></textarea>
+                                            <button class="btn btn-theme" type="submit" value="Submit Form">Send Message</button>
+                                        </div>
+                                    </div>
+                                    <div id="form-messages"></div>
                                 </div>
-                            </div>
-                            <div id="form-messages"></div>
-                            
-                        </form>
+                            </form>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8461814587786!2d36.80480781475393!3d-1.2648354990774564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17891e11d267%3A0x18b141414a874b6a!2sMENORAH%20HOSPITAL%20-%20WESTLANDS%20MEDICAL%20CENTER!5e0!3m2!1sen!2sin!4v1679394866550!5m2!1sen!2sin" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
+                        <!-- <img class="animated fadeInLeftShort slow delay-500 booking-cantact-img1" src="img/Aimg/d8.png" alt=""> -->
+                        <img class="animated fadeInLeftShort slow delay-500 booking-cantact-img1" src="img/cust/appointment1.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- appointment end -->
+    <section>
+        <div class="container_fluid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8461814587786!2d36.80480781475393!3d-1.2648354990774564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17891e11d267%3A0x18b141414a874b6a!2sMENORAH%20HOSPITAL%20-%20WESTLANDS%20MEDICAL%20CENTER!5e0!3m2!1sen!2sin!4v1679394866550!5m2!1sen!2sin" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8461814587786!2d36.80480781475393!3d-1.2648354990774564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17891e11d267%3A0x18b141414a874b6a!2sMENORAH%20HOSPITAL%20-%20WESTLANDS%20MEDICAL%20CENTER!5e0!3m2!1sen!2sin!4v1679394866550!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+    </section>
+    
 
-    <!-- divider start -->
-    <section class="service-area over-layer-default" style="background-image:url(img/bg/5.jpg);">
-        <div class="container padding-bottom-none padding-top-40">
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 text-white border-right">
-                            <div class="service-icon">
-                                <i class="pe-7s-call"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Give us a Call</a></h5>
-                                <p> 010-090-9090- Westlands Nairobi.</p>
-                                <p>010-090-9080 - Wote Makueni.</p>
-                            </div>
+   <!-- divider start -->
+   <section class="service-area over-layer-default" style="background-image:url(img/bg/5.jpg);">
+    <div class="container padding-bottom-none padding-top-40">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-sm-12 col-md-4">
+                    <div class="service-item style-1 text-white border-right">
+                        <div class="service-icon">
+                            <i class="pe-7s-call"></i>
+                        </div>
+                        <div class="content">
+                            <h5><a href="#">Give us a Call</a></h5>
+                            <p> 010-090-9090- Westlands Nairobi.</p>
+                            <p>010-090-9080 - Wote Makueni.</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 text-white border-right">
-                            <div class="">
-                                <i class="pe-7s-mail-open"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Send us a Message</a></h5>
-                                <p>contact@menorahhospital.com</p>
-                            </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="service-item style-1 text-white border-right">
+                        <div class="">
+                            <i class="pe-7s-mail-open"></i>
+                        </div>
+                        <div class="content">
+                            <h5><a href="#">Send us a Message</a></h5>
+                            <p>contact@menorahhospital.com</p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="service-item style-1 text-white">
-                            <div class="">
-                                <i class="pe-7s-map-marker"></i>
-                            </div>
-                            <div class="content">
-                                <h5><a href="#">Visit our Location</a></h5>
-                                <p>Menorah Medical Center, Westlands Nairobi. </p><br>
-                                <p>Menorah Medical Institute - Wote, Makueni County.</p>
-                            </div>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <div class="service-item style-1 text-white">
+                        <div class="">
+                            <i class="pe-7s-map-marker"></i>
+                        </div>
+                        <div class="content">
+                            <h5><a href="#">Visit our Location</a></h5>
+                            <p>Menorah Medical Center, Westlands Nairobi. </p><br>
+                            <p>Menorah Medical Institute - Wote, Makueni County.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- divider end -->
-
-     <!-- Footer Style start -->
+    </div>
+</section>
+<!-- divider end -->
+ <!-- Footer Style start -->
  <footer class="bg-faded">
     <div class="container">
         <div class="section-content">
@@ -404,7 +363,7 @@
   </div>
 </section>
 <!-- Footer Style End -->
-
+  
     <a href="#" class="scrollup"><i class="pe-7s-up-arrow" aria-hidden="true"></i></a>
     <!-- jQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -421,10 +380,6 @@
     <script type="text/javascript" src="js/player.min.js"></script>
     <script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript" src="js/comming-soon.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsTvi2dmx_Bnel6F0POzTg6-TaQ16JeDs&callback=initMap" type="text/javascript"></script>
-
 
     <!-- Main Custom JS -->
     <script type="text/javascript" src="js/script.js"></script>
@@ -433,3 +388,4 @@
 </body>
 
 </html>
+
