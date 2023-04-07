@@ -130,6 +130,10 @@ section {
     background-attachment: fixed;
 
 }
+.logo500{
+    height: 75px;
+    width: 290px;
+}
 .container,
 .container-fluid{
     padding: 70px 0 50px;
