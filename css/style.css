@@ -131,8 +131,9 @@ section {
 
 }
 .logo500{
-    height: auto;
-    width: 235px;
+    display: inline-block;
+    height: 100%;
+    width: 350px;
 }
 .container,
 .container-fluid{
