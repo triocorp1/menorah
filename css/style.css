@@ -1269,7 +1269,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 
 .bs-slider{
     overflow: hidden;
-    max-height: 750px;
+    max-height: 700px;
     position: relative;
     background: #000000;
 }
