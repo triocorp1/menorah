@@ -1470,7 +1470,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
     
     padding: 0;
     /* color: #ffffff; */
-    color: #FF6600;
+    color: #0f0804;
     font-size: 42px;
     font-style: normal;
     line-height: 84px;
@@ -1481,7 +1481,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 }
 .slide-text > p {
     /* color: #ffffff; */
-    color: gold;
+    color: rgb(240, 22, 10);
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     font-weight: 400;
