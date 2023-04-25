@@ -1023,10 +1023,10 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 .conner-style .navbar-brand:before {
     /* background:rgba(0,176,146, 0.9);*/
     /* background: 	# ; */
-    background: 	ffffff#013220 ;
+    background: #0d3a29 ;
     content: "";
     position: absolute;
-    left: -80%;
+    left: 40%;
     top: 0;
     width: 100%;
     height: 100%;
@@ -1050,7 +1050,8 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
     position: relative !important;
 }
 .conner-style.style-2 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    /* color: #777; */
+    color: gold;
     font-size: 14px;
     font-weight: 600;
     padding: 30px 12px;
@@ -2024,8 +2025,8 @@ content: "\f10d";
     opacity: 0.40;
 }
 .testimonial-item .testimonial-author .author-img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     /* border: 2px solid #013220 ; */
     border-radius: 1%;
@@ -2406,7 +2407,8 @@ content: "\f10d";
 }
 .funfact-field .counter-col .start-count {
     border-right: 1px solid #FFF;
-    color: #f8f8f8;
+    /* color: #f8f8f8; */
+    color: gold;
     font-weight: 600;
 }
 .funfact-field .counter-col:hover i {
@@ -5957,15 +5959,15 @@ ul.rating-text li, .pro-review ul li, .social-icon ul li {
 }
 .about-feature.style-2 .col-xs-12.col-sm-6.col-md-6.col-lg-4:first-child {
     /* background: #00b09a; */
-    background: #013220 ;
+    background: #218532 ;
 }
 .about-feature.style-2 .col-xs-12.col-sm-6.col-md-6.col-lg-4:nth-child(2) {
     /* background: #19b79c; */
-    background: #01472d ;
+    background: #2eb14f ;
 }
 .about-feature.style-2 .col-xs-12.col-sm-6.col-md-6.col-lg-4:last-child {
     /* background: #32bfa7; */
-    background: #026c45 ;
+    background: #32c256 ;
 }
 .about-feature.style-2 .col-xs-12.col-sm-6.col-md-6.col-lg-4 .appointment-item {
     background: transparent;
