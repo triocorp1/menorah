@@ -19,7 +19,8 @@
         font-size: 12px;
     }
     .carousel .item {
-        min-height: 350px;
+        /* min-height: 350px; */
+        min-height: auto;
     }
     .about-wrap {
         padding: 0 10px;

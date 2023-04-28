@@ -924,10 +924,16 @@ button {
 .navbar-default .navbar-nav.style-3>li>a:hover,
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
-    color: #777;
-    background-color: transparent;
+    color: #fbf7f7;
+    /* background-color: transparent; */
+    background-color: #0C6A3A;
+    /* padding-top: 18px; */
+    /* margin-top: 10px; */
+    margin: 3px;
+    /* margin-bottom: 20px; */
+    /* margin-left: 10px   ; */
 }
-
+/* navbar block color */
 .navbar-default .navbar-nav.style-3>.active>a {
     color: #888;
 }
@@ -1023,10 +1029,10 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 .conner-style .navbar-brand:before {
     /* background:rgba(0,176,146, 0.9);*/
     /* background: 	# ; */
-    background: #0d3a29 ;
+    background: #f5faf8 ;
     content: "";
     position: absolute;
-    left: 40%;
+    left: -90%;
     top: 0;
     width: 100%;
     height: 100%;
@@ -1050,8 +1056,8 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
     position: relative !important;
 }
 .conner-style.style-2 .navbar-default .navbar-nav > li > a {
-    /* color: #777; */
-    color: gold;
+    color: #070101;
+    /* color: gold; */
     font-size: 14px;
     font-weight: 600;
     padding: 30px 12px;
@@ -1470,8 +1476,8 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 .slide-text > h1 {
     
     padding: 0;
-    /* color: #ffffff; */
-    color: #0f0804;
+    color: #ffffff;
+    /* color: #0f0804; */
     font-size: 42px;
     font-style: normal;
     line-height: 84px;
