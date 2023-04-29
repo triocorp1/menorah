@@ -4867,10 +4867,12 @@ footer {
 
 .gallery-hover {
     position: absolute;
-    background-color: rgba(0,176,146, 0.90);
+    /* background-color: rgba(0,176,146, 0.90); */
+    background-color: rgba(200,0,0, 0.20) ;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
+
 
 
 .gallery-item .gallery-hover {
@@ -4973,6 +4975,8 @@ footer {
 .gallery.col-3 .gallery-item {
     width: 33.3333333%;
 }
+
+/* client 4  */
 
 /*portfolio 4 grid*/
 
