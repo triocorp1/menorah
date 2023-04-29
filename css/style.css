@@ -1029,7 +1029,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 .conner-style .navbar-brand:before {
     /* background:rgba(0,176,146, 0.9);*/
     /* background: 	# ; */
-    background: #f5faf8 ;
+    background: #ffffff ;
     content: "";
     position: absolute;
     left: -90%;
