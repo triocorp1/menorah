@@ -240,9 +240,10 @@
                             <h2>Get in Touch</h2>
                             <div class="small-line-border-2"></div>
                         </div>
-                        <form id="ajax-contact" method="post" action="php/contact.php">
+                        <!-- <form id="ajax-contact" method="post" action="php/contact.php"> -->
+                            <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="col-md-6">
-                                <input type="text" name="name" id="fname" class="form-control" placeholder="Your Name" required>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
                             </div>
                             <div class="col-md-6">
                                 <input type="email" name="email" id="email" class="form-control" placeholder="Your Email"  required>
@@ -254,7 +255,7 @@
                                 <div class="contact-textarea">
                                     <textarea class="form-control" rows="6" placeholder="Wright Message" id="message" name="message" required></textarea>
                                     <!-- <button class="btn btn-theme" type="submit" value="Submit Form" onclick="sendEmail();">Send Message</button> -->
-                                    <button class="btn btn-theme" type="submit"  onclick="sendEmail();">Send Message</button>
+                                    <button class="btn btn-theme" type="submit">Send Message</button>
                                 </div>
                             </div>
                             <!-- <div id="form-messages"></div> -->
@@ -461,7 +462,9 @@
              "<br> Message :" + document.getElementById("message").value,
            })
              .then(function (message) {
+                
                alert("mail sent successfully") 
+           
              });
          }
        </script>

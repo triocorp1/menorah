@@ -134,6 +134,7 @@ section {
     display: inline-block;
     height: 100%;
     width: 300px;
+    object-fit: cover;
 }
 .container,
 .container-fluid{
