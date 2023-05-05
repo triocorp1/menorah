@@ -4317,7 +4317,8 @@ footer {
 }
 .footer-logo {
   margin-bottom: 20px;
-  width: 180px;
+  /* width: 180px; */
+  width: 280px;
 }
 .footer-logo-2 {
   width: 250px;
