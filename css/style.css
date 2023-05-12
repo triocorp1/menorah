@@ -491,7 +491,31 @@ button {
     background: #013220 ;  
 }
 
+/* whatsapp */
 
+.whatsapp {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    display: none;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1;
+    /* background-color: #013220 ; */
+    color: #013220;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+.whatsapp i {
+    color: #ffffff;
+}
+
+.whatsapp:active i,
+.whatsapp:focus i {
+    color: #ffffff;
+}
 /*****=====*****=====*****=====*****=====
     05. Scrollup CSS
 =====*****=====*****=====*****=====*****/
@@ -1391,7 +1415,7 @@ a.flip-animate:hover span:before, a.flip-animate:focus span:before {
 /*---------- INDICATORS CONTROL ----------*/
 .indicators-line > .carousel-indicators{
     right: 48.5%;
-    bottom: 3%;
+    bottom: 1%;
     left: auto;
     width: 90%;
     height: 20px;
