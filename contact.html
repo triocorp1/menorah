@@ -87,6 +87,10 @@
                                    
                                 </li>
                                 <li class="dropdown">
+                                    <a href="CNA.html" class="dropdown-toggle"  role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Pages"> CNA Training</span></a>
+                                   
+                                </li>
+                                <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Depertment">Depertment <i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="phamarcy.html">PHAMARCY</a>
@@ -298,12 +302,13 @@
                             <div class="col-md-6">
                                 <input type="text" name="lname" id="lname" class="form-control lname" placeholder="Your Last Name"  required>    
                             </div>
+                           
                             <div class="col-md-6">
-                                <input type="email" name="email" id="email" class="form-control email" placeholder="Your Email"  required>
+                                <input type="text" name="phone" id="phone" class="form-control phone" placeholder="Your Number"   required>
                                 
                             </div>
                             <div class="col-md-6">
-                                <button class="btn btn-primary" onclick="sendOTP()">Send OTP</button>
+                                <button  class="btn btn-primary" onclick="sendOTPP()">Send OTP</button>
                                
                                 
                             </div>
@@ -312,7 +317,9 @@
                                     OTP verified Success fully
                                 </div>
                                 <div class="verification">
+                                    
                                     <div class="title center">
+                                        <!-- <p>An OTP has been sent to <span class="emailpartial">***</span></p> -->
                                         <p>An OTP has been sent to <span class="emailpartial">***</span></p>
                                     </div>
                                     <div class="otp-input-fields">
@@ -326,9 +333,13 @@
                                     Invalid otp
                                 </div>
                             </div>
-                         
+<!--                          
                             <div class="col-md-12">
                                 <input type="text" name="subject" class="form-control subject" placeholder="Subject" id="subject" >
+                            </div> -->
+                            <div class="col-md-12">
+                                <input type="email" name="email" id="email" class="form-control email" placeholder="Your Email"  required>
+                                
                             </div>
                             <div class="col-md-12">
                                 <div class="contact-textarea">
@@ -363,14 +374,18 @@
         let lnameEle = document.querySelector('.lname');
         let subjectEle = document.querySelector('.subject');
         let messageEle = document.querySelector('.message');
+        let phoneEle = document.querySelector('.phone');
 
         let emailEle = document.querySelector('.email');
         let verfEle = document.querySelector('.verification');
+        
         let successEle = document.querySelector('.success');
         let errorEle = document.querySelector('.error');
         let otp_inputs = document.querySelectorAll('.otp_num');
         let emailpartialEle = document.querySelector('.emailpartial');
-        let regex = new RegExp('[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}');
+        let phonepartialEle = document.querySelector('.phonepartial');
+        let regex1 = new RegExp('[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}');
+        let regex = new RegExp('^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$');
         let otp_check = '';
         let email;
 
@@ -378,6 +393,7 @@
         let lname;
         let subject;
         let message;
+        let phone;
 
         otp_inputs.forEach(
             (ip) => {
@@ -412,7 +428,7 @@
                 {
                     method: "POST",
                     body: JSON.stringify({
-                        "email": `${email}`,
+                        "phone": `${phone}`,
                         "otp": `${otp_check}`
                     }),
                     headers: { 'Content-Type': 'application/json' }
@@ -439,6 +455,79 @@
                 )
 
         }
+
+        function sendOTPP() {
+            phone = phoneEle.value;
+            if (regex.test(phone)) {
+                fetch('http://localhost:4000/abc', {
+                    method: "POST",
+                    body: JSON.stringify({
+                        "phone": `${phone}`
+                    }),
+                    headers: { 'Content-Type': 'application/json' }
+                })
+                    .then(
+                        (res) => {
+                            console.log(res);
+                            if (res.status == 200) {
+                                verfEle.style.display = 'block';
+                                phonepartialEle.value = "***" + phone.slice(3)
+                                // emailEle.value = ''
+                            }
+                            else {
+                                errorEle.style.display = 'block';
+                                errorEle.innerHTML = "phone not exist";
+                                successEle.style.display = 'none';
+
+                            }
+                        }
+                    )
+
+            }
+            else {
+                errorEle.style.display = 'block';
+                errorEle.innerHTML = "Invalid phone";
+                successEle.style.display = 'none';
+
+            }
+
+        }
+
+
+        function verifySmsOTP() {
+            fetch('http://localhost:4000/verifyabc',
+                {
+                    method: "POST",
+                    body: JSON.stringify({
+                        "phone": `${phone}`,
+                        "otp": `${otp_check}`
+                    }),
+                    headers: { 'Content-Type': 'application/json' }
+
+
+                }
+            )
+                .then(
+                    (res) => {
+                        console.log(res)
+                        if (res.status == 200) {
+                            verfEle.style.display = 'none';
+                            successEle.style.display = 'block';
+                            errorEle.style.display = 'none';
+
+                        }
+                        else {
+                            errorEle.style.display = 'block';
+                            errorEle.innerHTML = "Invalid OTP";
+                            successEle.style.display = 'none';
+
+                        }
+                    }
+                )
+
+        }
+
+
 
 
 
@@ -478,21 +567,20 @@
 
         }
 
-
         function sendMAIL() {
             name = nameEle.value;
             lname = lnameEle.value;
-            subject = subjectEle.value;
+            phone = phoneEle.value;
             message = messageEle.value;
             email = emailEle.value;
-            if (regex.test(email)) {
+            if (regex1.test(email)) {
                 fetch('http://localhost:4000/sendmail', {
                     method: "POST",
                     body: JSON.stringify({
                         "name": `${name}`,
                         "lname": `${lname}`,
                         "email": `${email}`,
-                        "subject": `${subject}`,
+                        "phone": `${phone}`,
                         "message": `${message}`
                     }),
                     headers: { 'Content-Type': 'application/json' }
@@ -500,8 +588,8 @@
                     .then(
                         (res) => {
                             if (res.status == 200) {
-                               document.getElementById('showSM').innerHTML = 'Hey There';
-                            //     verfEle.style.display = 'block';
+                            //    document.getElementById('showSM').innerHTML = 'Hey There';
+                                // verfEle.style.display = 'block';
                                 successEle.style.display = 'Hey';
                             //     emailpartialEle.value = "***" + email.slice(3)
                             //     emailEle.value = ''
@@ -671,7 +759,7 @@
   </div>
 </section>
 <!-- Footer Style End -->
-<a href="https://wa.me/254100404040" class="whatsapp" style="display: inline;"><i class="fa-brands fa-whatsapp fa-spin fa-2x" style="color:#013220"></i></a>
+<a href="https://wa.me/254100808070" class="whatsapp" style="display: inline;"><i class="fa-brands fa-whatsapp fa-spin fa-2x" style="color:#013220"></i></a>
 
     <a href="#" class="scrollup"><i class="pe-7s-up-arrow" aria-hidden="true"></i></a>
     <!-- jQuery -->
