@@ -270,6 +270,15 @@
         <button role="button" class="button-85 margin-top-30"   onclick="DownloadFile('Menorah_TrainingFlyer.pdf')">DownLoad Brochure</button>
         <script type="text/javascript">
             function DownloadFile(Menorah_TrainingFlyer) {
+
+
+
+                var pdfUrl = '../Pages/Menorah_TrainingFlyer.pdf';
+
+    // Open the PDF in a new window or tab
+    window.open(pdfUrl, '_blank');
+
+
                 //Set the File URL.
                 var url = "Pages/" + Menorah_TrainingFlyer;
      
